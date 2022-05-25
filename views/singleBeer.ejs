@@ -18,9 +18,11 @@
       <h2>Tagline:</h2>
       <%-singleBeer[0].tagline%>
     </h4>
-    <h4>
-      <h2>Food Pairing:</h2>
-      <%-singleBeer[0].food_pairing%>
-    </h4>
+    <h2>Food Pairing:</h2>
+    <%singleBeer[0].food_pairing.forEach(pairing => { %>
+    <ul>
+      <li><%=pairing%></li>
+    </ul>
+    <% }) %>
   </div>
 </div>
