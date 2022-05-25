@@ -8,11 +8,7 @@
     <title>IronBeers</title>
   </head>
   <body>
-    <nav>
-      <a class="layoutLink" href="/">Home</a>
-      <a class="layoutLink" href="/beers">Beers</a>
-      <a class="layoutLink" href="/randomBeer">Random Beer</a>
-    </nav>
-    <%- body%>
+    <%- include('./partials/nav-partial.ejs')%> <%- body%><%-
+    include('./partials/footer-partial.ejs')%>
   </body>
 </html>
